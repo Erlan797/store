@@ -1,1 +1,1 @@
-Anime magazin store
+Anime store
