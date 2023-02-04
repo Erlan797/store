@@ -1,1 +1,1 @@
-My portfolio as a frontend developer. 
+Anime magazin store
