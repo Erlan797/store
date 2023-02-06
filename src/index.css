@@ -107,20 +107,23 @@ main .item{
     position: relative;
     padding-bottom: 20px;
 }
-main .item img{
+main .item img, .full-item img{
     width: 100%;
     border-radius: 10px 10px 0 0;
     transition: transform 500ms ease;
+    cursor: pointer;
 }
-main .item img:hover{
+main .item img:hover,.full-item img:hover{
     transform: scale(1.05);
 }
-main h2, main p, main b{
+main h2, main p, main b, .full-item h2, .full-item p, .full-item b{
     margin: 10px 20px;
     color: #333;
 }
-main b{color: #5fa36a}
-main .add-card{
+main b,
+.full-item b{color: #5fa36a}
+main .add-card,
+.full-item .add-card{
     position: absolute;
     right: 20px;
     bottom: 20px;
@@ -135,7 +138,8 @@ main .add-card{
     font-weight: 600;
     transition: transform 500ms ease;
 }
-main .add-card:hover{
+main .add-card:hover,
+.full-item .add-card:hover{
     transform: scale(1.5) translateY(-5px);
 }
 footer{
@@ -199,4 +203,23 @@ header .shop-cart .sum{
 .categories div:hover{
     border-color: silver;
     transform: scale(1.1);
+}
+.full-item {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #2222229f;
+    z-index: 9999;
+    overflow: auto;
+}
+.full-item > div{
+    width: 600px;
+    position: relative;
+    margin: 10% auto;
+    padding: 40px 30px;
+    background: #fff;
+    border-radius: 9px;
+
 }
